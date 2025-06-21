@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+        <HintPath>..\..\..\..\.nuget\packages\microsoft.aspnetcore.app.ref\9.0.4\ref\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      </Reference>
+      <Reference Include="MongoDB.Driver">
+        <HintPath>..\..\..\..\.nuget\packages\mongodb.driver\3.4.0\lib\net6.0\MongoDB.Driver.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HomeTask1.Projects.Domain\HomeTask1.Projects.Domain.csproj" />
+      <ProjectReference Include="..\HomeTask1.Users.Domain\HomeTask1.Users.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CSharpFunctionalExtensions" Version="3.6.0" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.6" />
+      <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
